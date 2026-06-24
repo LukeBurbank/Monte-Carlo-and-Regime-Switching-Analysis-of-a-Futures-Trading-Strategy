@@ -4,7 +4,7 @@ Bootstrap and regime-switching Monte Carlo simulations used to evaluate the robu
 
 ## Project Overview
 
-This project analyzes the robustness of a discretionary futures trading strategy using two Monte Carlo frameworks:
+Using Python, Pandas, NumPy, and Matplotlib, this project analyzes the robustness of a discretionary futures trading strategy through two Monte Carlo frameworks:
 
 1. Bootstrap Monte Carlo Simulation
 2. Regime-Switching Monte Carlo Simulation
@@ -18,6 +18,13 @@ The objective was to determine whether the strategy's historical performance rem
 - Trades classified into two market regimes:
   - Ideal
   - Not Ideal
+
+## Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
 
 ## Monte Carlo #1: Bootstrap Simulation
 
