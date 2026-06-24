@@ -44,9 +44,8 @@ This changes only the order of trades while preserving the exact historical dist
 
 The original trade sequence was randomly reordered without replacement. This preserved the exact trade distribution while demonstrating how trade sequencing alone can affect the equity curve.
 
-[INSERT RESHUFFLED TRADE SEQUENCE]
+![Trade Reshuffling Example](images/bootstrap_trade_sample.png)
 
-[INSERT RESHUFFLED EQUITY CURVE]
 
 ### Bootstrap Sampling (With Replacement)
 
@@ -63,11 +62,10 @@ A total of 1,000 bootstrap simulations were generated to estimate the distributi
 
 ### Bootstrap Monte Carlo Equity Curve Distribution
 
-[INSERT MONTE CARLO PATHS]
-
+![Monte Carlo Equity Curve Distribution](images/bootstrap_equity_distribution.png)
 ### Drawdown Distribution
 
-[INSERT DRAWDOWN HISTOGRAM]
+![Drawdown Distribution](images/bootstrap_drawdown_distribution.png)
 
 ### Drawdown Statistics
 
