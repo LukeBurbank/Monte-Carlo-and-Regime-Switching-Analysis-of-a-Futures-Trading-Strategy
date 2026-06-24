@@ -23,13 +23,13 @@ The objective was to determine whether the strategy's historical performance rem
 
 ### Objective
 
-The first simulation tested whether the strategy's profitability was dependent on the exact sequence of historical trades.
+The first simulation tested whether the strategy's profitability was dependent on the historical ordering of trades.
 
 ### Methodology
 
 Before performing bootstrap simulations, it is useful to first understand simple trade reshuffling.
 
-Imagine all 67 historical trades are placed in a hat.
+Imagine all 67 historical trades are written on slips of paper and placed into a hat.
 
 ### Trade Reshuffling (Without Replacement)
 
@@ -61,7 +61,7 @@ Because each trade is returned to the hat after selection, some trades may appea
 
 A total of 1,000 bootstrap simulations were generated to estimate the distribution of potential future outcomes.
 
-### Monte Carlo Equity Curve Distribution
+### Bootstrap Monte Carlo Equity Curve Distribution
 
 [INSERT MONTE CARLO PATHS]
 
