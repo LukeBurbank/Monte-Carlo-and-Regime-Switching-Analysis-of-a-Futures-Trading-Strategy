@@ -160,3 +160,24 @@ The similarity between the bootstrap and regime-switching results suggests that 
 - Market regimes exhibited persistence rather than random switching.
 - Drawdown characteristics remained similar to the bootstrap analysis.
 - Results suggest the strategy's edge is robust across a variety of market environments and trade sequences.
+
+# Final Takeaways
+
+Using Python, this project evaluated a discretionary NQ futures trading strategy through two separate Monte Carlo frameworks:
+
+1. Bootstrap Monte Carlo Simulation
+2. Regime-Switching Monte Carlo Simulation
+
+The bootstrap model tested whether the strategy's profitability was dependent on the historical ordering of trades, while the regime-switching model incorporated changing market environments and regime persistence.
+
+Despite the additional complexity introduced by the regime model, both approaches produced remarkably similar results. Average drawdowns, median drawdowns, and overall equity curve distributions remained consistent across both simulations.
+
+Key conclusions from the analysis include:
+
+- The strategy maintained positive expectancy across thousands of simulated paths.
+- Profitability was not dependent on a specific historical sequence of trades.
+- Performance was stronger during Ideal market conditions.
+- Drawdown characteristics remained stable across both simulation frameworks.
+- The strategy demonstrated robustness across a variety of market environments and trade sequences.
+
+While historical performance does not guarantee future results, both Monte Carlo frameworks suggest that the strategy's edge is not solely the product of randomness and has remained resilient under a wide range of simulated conditions.
