@@ -1,5 +1,7 @@
 # Monte-Carlo-and-Regime-Switching-Analysis-of-a-Futures-Trading-Strategy
+
 Bootstrap and regime-switching Monte Carlo simulations used to evaluate the robustness, risk, and drawdown characteristics of a discretionary NQ futures trading strategy.
+
 ## Project Overview
 
 This project analyzes the robustness of a discretionary futures trading strategy using two Monte Carlo frameworks:
@@ -16,57 +18,62 @@ The objective was to determine whether the strategy's historical performance rem
 - Trades classified into two market regimes:
   - Ideal
   - Not Ideal
+
 ## Monte Carlo #1: Bootstrap Simulation
 
-### Objective
+## Objective
 
 The first simulation tested whether the strategy's profitability was dependent on the exact sequence of historical trades.
 
-### Resampling Methods
+## Methodology
 
-To illustrate the process, imagine 67 historical trades placed in a hat.
+To illustrate the concept, imagine all 67 historical trades placed in a hat.
 
-**Trade Reshuffling (without replacement)**
+### Trade Reshuffling (Without Replacement)
 
 - Pick a trade from the hat
 - Write it down
 - Leave it out of the hat
-- Continue until all 67 trades have been used once
+- Continue until all 67 trades have been selected
 
-This preserves the exact trade distribution while changing only the sequence of trades.
-
-**Bootstrap Sampling (with replacement)**
-
-- Pick a trade from the hat
-- Write it down
-- Put it back into the hat
-- Repeat 67 times
-
-This allows some trades to appear multiple times while others may not appear at all, creating entirely new simulated trade sequences.
+This changes only the order of trades while preserving the exact historical distribution of winners and losers.
 
 ### Trade Reshuffling Example
 
-The original 67 trades were randomly reordered without replacement. This preserved the exact trade distribution while demonstrating how trade sequencing alone can alter the equity curve.
+The original trade sequence was randomly reordered to demonstrate how trade sequencing alone can affect the equity curve.
 
 [INSERT RESHUFFLED TRADE SEQUENCE]
 
 [INSERT RESHUFFLED EQUITY CURVE]
 
-### Monte Carlo Equity Curve Distribution
+### Bootstrap Sampling (With Replacement)
+
+The bootstrap simulation extends this idea by returning each selected trade back into the hat before the next draw.
+
+- Pick a trade from the hat
+- Write it down
+- Put it back into the hat
+- Repeat until 67 trades have been selected
+
+Because trades are replaced after each selection, some trades may appear multiple times while others may not appear at all. This creates entirely new but statistically similar trade sequences.
+
+A total of 1,000 bootstrap simulations were generated to estimate the distribution of potential future outcomes.
+
+## Monte Carlo Equity Curve Distribution
 
 [INSERT MONTE CARLO PATHS]
 
-### Drawdown Distribution
+## Drawdown Distribution
 
 [INSERT DRAWDOWN HISTOGRAM]
 
-### Drawdown Statistics
+## Drawdown Statistics
 
 - Average Drawdown: -5.35R
 - Median Drawdown: -5.00R
 - Worst Drawdown: -18.48R
 - 5th Percentile Drawdown: -9.32R
 
-### Conclusion
+## Conclusion
 
-The strategy remained profitable across a wide range of simulated trade sequences, suggesting that performance was not solely dependent on the historical ordering of trades.
+The strategy remained profitable across a wide range of simulated trade sequences, suggesting that performance was not solely dependent on the historical ordering of trades. Bootstrap results indicated that the strategy's edge persisted even when trade outcomes were repeatedly resampled into new hypothetical paths.of simulated trade sequences, suggesting that performance was not solely dependent on the historical ordering of trades.
