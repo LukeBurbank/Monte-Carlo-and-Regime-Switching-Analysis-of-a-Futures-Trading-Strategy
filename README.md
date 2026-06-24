@@ -122,7 +122,7 @@ The transition matrix measures the probability of moving between market regimes 
 
 These probabilities were estimated directly from the historical trade data and were used to generate realistic sequences of market conditions during the simulation. Rather than randomly assigning market states, the model allows regimes to persist and transition in a manner consistent with historical observations.
 
-[INSERT TRANSITION MATRIX IMAGE]
+![Regime Transition Matrix](images/regime_transition_matrix.png)
 
 ## Regime-Switching Monte Carlo Equity Curve Distribution
 
@@ -130,7 +130,7 @@ Using the transition probabilities from the matrix above, 1,000 regime-switching
 
 For each simulated trade, the model first determined the market regime based on the transition matrix and then randomly selected a historical trade outcome from that regime. This process preserved both the performance characteristics of each regime and the tendency for market conditions to persist over time.
 
-[INSERT REGIME MONTE CARLO EQUITY CURVE IMAGE]
+![Regime-Switching Monte Carlo Equity Curve Distribution](images/regime_switching_equity_distribution.png)
 
 The blue line represents the actual historical equity curve, while the orange line represents the median simulated outcome. The shaded regions display the 25th–75th percentile and 5th–95th percentile ranges across all simulations.
 
@@ -138,7 +138,7 @@ The blue line represents the actual historical equity curve, while the orange li
 
 The distribution below shows the maximum drawdown experienced across all 1,000 regime-switching simulations.
 
-[INSERT REGIME DRAWDOWN HISTOGRAM IMAGE]
+![Regime-Switching Drawdown Distribution](images/regime_switching_drawdown_distribution.png)
 
 ### Drawdown Statistics
 
