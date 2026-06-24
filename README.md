@@ -86,3 +86,77 @@ A total of 1,000 bootstrap simulations were generated to estimate the distributi
 ### Conclusion
 
 The strategy remained profitable across a wide range of simulated trade sequences, suggesting that historical performance was not solely dependent on trade order. Bootstrap results indicated that the strategy's edge persisted across many alternative paths generated from the same underlying trade distribution.
+
+
+
+# Monte Carlo #2: Regime-Switching Simulation
+
+## Objective
+
+The second simulation tested whether the strategy remained profitable when trade outcomes were generated according to changing market regimes rather than simple random resampling.
+
+Unlike bootstrap sampling, which treats every trade as equally likely, regime-switching simulations account for the tendency of market conditions to persist over time.
+
+## Regime Classification
+
+Historical trades were classified into two market environments:
+
+- Ideal
+- Not Ideal
+
+These classifications were based on discretionary pre-market notes recorded before each trading session.
+
+Examples of conditions that were often classified as Not Ideal included:
+
+- Trading days immediately before major economic releases such as FOMC meetings or CPI reports
+- Sessions following unusually large range expansion days
+- Market environments that historically produced less consistent price action
+
+Ideal conditions generally represented market environments where the strategy's setup characteristics were more favorable based on historical observation.
+
+While the classification process was discretionary, it was recorded prior to each trading session and used consistently throughout the dataset.
+
+## Transition Matrix
+
+The transition matrix measures the probability of moving between market regimes from one trade to the next.
+
+These probabilities were estimated directly from the historical trade data and were used to generate realistic sequences of market conditions during the simulation. Rather than randomly assigning market states, the model allows regimes to persist and transition in a manner consistent with historical observations.
+
+[INSERT TRANSITION MATRIX IMAGE]
+
+## Regime-Switching Monte Carlo Equity Curve Distribution
+
+Using the transition probabilities from the matrix above, 1,000 regime-switching simulations were generated.
+
+For each simulated trade, the model first determined the market regime based on the transition matrix and then randomly selected a historical trade outcome from that regime. This process preserved both the performance characteristics of each regime and the tendency for market conditions to persist over time.
+
+[INSERT REGIME MONTE CARLO EQUITY CURVE IMAGE]
+
+The blue line represents the actual historical equity curve, while the orange line represents the median simulated outcome. The shaded regions display the 25th–75th percentile and 5th–95th percentile ranges across all simulations.
+
+## Drawdown Distribution
+
+The distribution below shows the maximum drawdown experienced across all 1,000 regime-switching simulations.
+
+[INSERT REGIME DRAWDOWN HISTOGRAM IMAGE]
+
+### Drawdown Statistics
+
+- Average Drawdown: -5.34R
+- Median Drawdown: -5.00R
+- Worst Drawdown: [INSERT VALUE]
+- 5th Percentile Drawdown: [INSERT VALUE]
+
+## Conclusion
+
+The strategy remained profitable across the majority of simulated regime sequences. While market conditions shifted between Ideal and Not Ideal environments, the overall distribution of outcomes remained favorable.
+
+The similarity between the bootstrap and regime-switching results suggests that the strategy's edge is not dependent on a specific historical trade sequence or a single market environment. Even after accounting for regime persistence, the strategy continued to exhibit robust profitability and manageable drawdowns.
+
+## Key Findings
+
+- The strategy remained profitable across the majority of simulated regime sequences.
+- Performance was stronger during Ideal market conditions.
+- Market regimes exhibited persistence rather than random switching.
+- Drawdown characteristics remained similar to the bootstrap analysis.
+- Results suggest the strategy's edge is robust across a variety of market environments and trade sequences.
