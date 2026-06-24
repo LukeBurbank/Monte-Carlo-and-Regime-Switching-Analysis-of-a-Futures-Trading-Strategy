@@ -144,8 +144,8 @@ The distribution below shows the maximum drawdown experienced across all 1,000 r
 
 - Average Drawdown: -5.34R
 - Median Drawdown: -5.00R
-- Worst Drawdown: [INSERT VALUE]
-- 5th Percentile Drawdown: [INSERT VALUE]
+- Worst Drawdown: -15.5R
+- 5th Percentile Drawdown: -9.05R
 
 ## Conclusion
 
