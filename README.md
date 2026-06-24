@@ -16,3 +16,37 @@ The objective was to determine whether the strategy's historical performance rem
 - Trades classified into two market regimes:
   - Ideal
   - Not Ideal
+## Monte Carlo #1: Bootstrap Simulation
+
+### Objective
+
+The first simulation tested whether the strategy's profitability was dependent on the exact sequence of historical trades.
+
+Trades were randomly resampled with replacement 1,000 times to generate alternative equity curves and drawdown outcomes.
+
+### Example Bootstrap Resample
+
+[INSERT PICTURE HERE]
+
+### Example Bootstrap Equity Curve
+
+[INSERT PICTURE HERE]
+
+### Bootstrap Monte Carlo Results
+
+- Average Drawdown: -5.35R
+- Median Drawdown: -5.00R
+- Worst Drawdown: -18.48R
+- 5th Percentile Drawdown: -9.32R
+
+### Bootstrap Drawdown Distribution
+
+[INSERT PICTURE HERE]
+
+### Bootstrap Monte Carlo Paths
+
+[INSERT PICTURE HERE]
+
+### Conclusion
+
+The strategy remained profitable across a wide range of simulated trade sequences, suggesting that performance was not solely dependent on the historical ordering of trades.
