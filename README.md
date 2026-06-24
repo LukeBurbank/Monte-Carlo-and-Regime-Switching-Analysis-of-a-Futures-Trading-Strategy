@@ -66,7 +66,7 @@ A total of 1,000 bootstrap simulations were generated to estimate the distributi
 ![Monte Carlo Equity Curve Distribution](images/bootstrap_equity_distribution.png)
 ### Drawdown Distribution
 
-![Drawdown Distribution](images/bootstrap_drawdown_distribution.png)
+![Drawdown Distribution](images/bootstrap_drawdown_distribution.png) 
 
 ### Drawdown Statistics
 
