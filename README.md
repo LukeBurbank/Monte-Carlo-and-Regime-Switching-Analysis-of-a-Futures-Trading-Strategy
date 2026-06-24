@@ -40,6 +40,9 @@ Imagine all 67 historical trades are written on slips of paper and placed into a
 
 This changes only the order of trades while preserving the exact historical distribution of winners and losers.
 
+Trade reshuffling provides a useful foundation because it isolates the impact of trade sequencing while keeping the underlying performance distribution unchanged. However, it is limited to the exact set of historical trades.
+
+To generate entirely new but statistically similar trade histories, the analysis uses bootstrap sampling with replacement. This approach allows individual trades to appear multiple times or not at all, creating thousands of alternative paths while preserving the overall characteristics of the strategy.
 ### Trade Reshuffling Example
 
 The original trade sequence was randomly reordered without replacement. This preserved the exact trade distribution while demonstrating how trade sequencing alone can affect the equity curve.
