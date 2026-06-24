@@ -2,6 +2,9 @@
 
 Bootstrap and regime-switching Monte Carlo simulations used to evaluate the robustness, risk, and drawdown characteristics of a discretionary NQ futures trading strategy.
 
+## Skills Demonstrated:
+Python | Pandas | NumPy | Statistical Modeling | Monte Carlo Simulation | Data Visualization | Financial Markets
+
 ## Project Overview
 
 Using Python, Pandas, NumPy, and Matplotlib, this project analyzes the robustness of a discretionary futures trading strategy through two Monte Carlo frameworks:
