@@ -75,6 +75,14 @@ A total of 1,000 bootstrap simulations were generated to estimate the distributi
 - Worst Drawdown: -18.48R
 - 5th Percentile Drawdown: -9.32R
 
+### Key Findings
+
+- The median bootstrap path remained profitable across 1,000 simulations.
+- The original equity curve finished near the center of the simulated distribution.
+- Most simulated paths experienced maximum drawdowns between approximately 3R and 7R.
+- Randomizing trade outcomes did not eliminate the strategy's positive expectancy.
+- Performance appeared robust to trade sequencing, suggesting profitability was not dependent on a specific historical order of trades.
+
 ### Conclusion
 
 The strategy remained profitable across a wide range of simulated trade sequences, suggesting that historical performance was not solely dependent on trade order. Bootstrap results indicated that the strategy's edge persisted across many alternative paths generated from the same underlying trade distribution.
