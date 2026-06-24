@@ -27,7 +27,8 @@ The first simulation tested whether the strategy's profitability was dependent o
 
 ## Methodology
 
-To illustrate the concept, imagine all 67 historical trades placed in a hat.
+Before performing bootstrap simulations, it is useful to first understand simple trade reshuffling.
+Imagine all 67 historical trades are placed in a hat.
 
 ### Trade Reshuffling (Without Replacement)
 
