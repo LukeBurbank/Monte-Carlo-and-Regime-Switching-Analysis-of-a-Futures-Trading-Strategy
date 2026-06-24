@@ -22,18 +22,12 @@ The objective was to determine whether the strategy's historical performance rem
 
 The first simulation tested whether the strategy's profitability was dependent on the exact sequence of historical trades.
 
-### Trade Reshuffling Example
+### Resampling Methods
 
-The original 67 trades were randomly reordered without replacement. This preserved the exact trade distribution while demonstrating how trade sequencing alone can alter the equity curve.
-
-[INSERT RESHUFFLED TRADE SEQUENCE]
-
-[INSERT RESHUFFLED EQUITY CURVE]
-
-### Bootstrap Simulation
 To illustrate the process, imagine 67 historical trades placed in a hat.
 
-**Trade Reshuffling (without replacement):**
+**Trade Reshuffling (without replacement)**
+
 - Pick a trade from the hat
 - Write it down
 - Leave it out of the hat
@@ -41,7 +35,8 @@ To illustrate the process, imagine 67 historical trades placed in a hat.
 
 This preserves the exact trade distribution while changing only the sequence of trades.
 
-**Bootstrap Sampling (with replacement):**
+**Bootstrap Sampling (with replacement)**
+
 - Pick a trade from the hat
 - Write it down
 - Put it back into the hat
@@ -49,9 +44,13 @@ This preserves the exact trade distribution while changing only the sequence of 
 
 This allows some trades to appear multiple times while others may not appear at all, creating entirely new simulated trade sequences.
 
-Bootstrap sampling was then performed by randomly selecting trades with replacement. This allowed trades to appear multiple times or not appear at all within a simulated path.
+### Trade Reshuffling Example
 
-1,000 bootstrap simulations were generated to estimate the distribution of future outcomes.
+The original 67 trades were randomly reordered without replacement. This preserved the exact trade distribution while demonstrating how trade sequencing alone can alter the equity curve.
+
+[INSERT RESHUFFLED TRADE SEQUENCE]
+
+[INSERT RESHUFFLED EQUITY CURVE]
 
 ### Monte Carlo Equity Curve Distribution
 
