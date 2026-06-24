@@ -44,8 +44,6 @@ This changes only the order of trades while preserving the exact historical dist
 
 The original trade sequence was randomly reordered without replacement. This preserved the exact trade distribution while demonstrating how trade sequencing alone can affect the equity curve.
 
-![Trade Reshuffling Example](images/bootstrap_trade_sample.png)
-
 
 ### Bootstrap Sampling (With Replacement)
 
