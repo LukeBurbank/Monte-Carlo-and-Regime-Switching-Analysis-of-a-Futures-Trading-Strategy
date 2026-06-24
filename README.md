@@ -65,7 +65,7 @@ Bootstrap sampling extends this idea by returning each selected trade back into 
 - Pick a trade from the hat
 - Write it down
 - Put it back into the hat
-- Repeat until 67 trades have been selected
+- Repeat 67 times
 
 Because each trade is returned to the hat after selection, some trades may appear multiple times while others may not appear at all. This creates entirely new but statistically similar trade sequences while preserving the underlying characteristics of the strategy.
 
